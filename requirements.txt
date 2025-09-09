@@ -1,6 +1,8 @@
 safetensors
-git+https://github.com/huggingface/diffusers.git
-gradio_logsview@https://huggingface.co/spaces/cocktailpeanut/gradio_logsview/resolve/main/gradio_logsview-0.0.17-py3-none-any.whl
+diffusers==0.32.1
+
+gradio_logsview @ https://huggingface.co/spaces/cocktailpeanut/gradio_logsview/resolve/main/gradio_logsview-0.0.17-py3-none-any.whl
+
 transformers
 lycoris-lora==1.8.3
 flatten_json
@@ -13,7 +15,7 @@ einops
 accelerate
 toml
 albumentations
-pydantic
+pydantic==2.9.2
 omegaconf
 k-diffusion
 open_clip_torch
@@ -32,4 +34,3 @@ peft
 gradio
 python-slugify
 imagesize
-pydantic==2.9.2

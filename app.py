@@ -6,6 +6,8 @@ sys.path.insert(0, os.getcwd())
 sys.path.append(os.path.join(os.path.dirname(__file__), 'sd-scripts'))
 import subprocess
 import gradio as gr
+#Suppress the gradio version check
+gr.utils.version_check = lambda *a, **k: None
 from PIL import Image
 import torch
 import uuid
@@ -888,7 +890,7 @@ function() {
 """
 
 current_account = account_hf()
-print(f"current_account={current_account}")
+#print(f"current_account={current_account}")
 
 with gr.Blocks(elem_id="app", theme=theme, css=css, fill_width=True) as demo:
     with gr.Tabs() as tabs:

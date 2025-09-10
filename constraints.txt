@@ -1,14 +1,20 @@
-# Hugging Face + training stack pins
-transformers<4.57
-tokenizers<0.22
-diffusers<0.35
-accelerate<1.8
-huggingface_hub<0.35
+# # Hugging Face + training stack pins
+# transformers<4.57
+# tokenizers<0.22
+# diffusers<0.35
+# accelerate<1.8
+# huggingface_hub<0.35
 
-# Keep consistent with many LoRA training scripts
-safetensors>=0.4.0,<0.7
-einops<0.8
-controlnet_aux==0.0.7
+# # Keep consistent with many LoRA training scripts
+# safetensors>=0.4.0,<0.7
+# einops<0.8
+# controlnet_aux==0.0.7
 
-# Colab sometimes has bigframes which wants rich<14
-rich<14
+# # Colab sometimes has bigframes which wants rich<14
+# rich<14
+
+# new pins from recent errors
+scipy==1.13.1
+transformers==4.49.0
+accelerate>=0.32,<0.35
+pillow
